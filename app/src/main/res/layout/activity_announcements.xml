@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input untuk Title -->
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:inputType="text" />
+
+    <!-- Input untuk Body -->
+    <EditText
+        android:id="@+id/editTextBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Body"
+        android:inputType="textMultiLine"
+        android:minLines="4" />
+
+    <!-- Input untuk Email Recipient -->
+    <EditText
+        android:id="@+id/editTextRecipient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Recipient Email"
+        android:inputType="textEmailAddress" />
+
+    <!-- Tombol untuk Mengirim -->
+    <Button
+        android:id="@+id/buttonSendEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Announcement"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/teal_700"
+        android:textColor="@android:color/white" />
+</LinearLayout>
